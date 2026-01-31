@@ -1,0 +1,5 @@
+---
+# vars file for roles/firewall_defense
+allowed_ports:
+  - 2222 #SSH, not 22 since we changed it to 2222.
+  - 80 #HTTP

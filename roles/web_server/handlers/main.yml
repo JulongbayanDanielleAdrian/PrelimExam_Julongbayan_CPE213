@@ -1,0 +1,12 @@
+---
+- name: Restart Apache2
+  service:
+    name: apache2
+    state: restarted
+    enabled: yes
+
+- name: Restart Fail2Ban
+  service:
+    name: fail2ban
+    state: restarted
+    enabled: yes

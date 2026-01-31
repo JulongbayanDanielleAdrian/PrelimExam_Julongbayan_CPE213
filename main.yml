@@ -1,0 +1,9 @@
+---
+- name: Apply Security Baselines
+  hosts: web_servers
+  become: yes
+
+  roles:
+    - sshd_config
+    - firewall_defense
+    - web_server
